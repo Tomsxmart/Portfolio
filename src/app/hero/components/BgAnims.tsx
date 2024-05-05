@@ -4,20 +4,10 @@ import styles from "./BgAnims.module.css";
 import Info from "./Info";
 import Hero from "../Hero";
 const BgAnims = () => {
-  const elementRef = useRef(null);
   const demoRef = useRef(null);
-  const shadowRef = useRef(null);
-  const sliderRef = useRef(null);
-  const checkboxRef = useRef(null);
-  let shadowWidth = 0;
-  let shadowHeight = 0;
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  useEffect(() => {
-    if (shadowRef.current) {
-      shadowWidth = shadowRef.current.offsetWidth;
-      shadowHeight = shadowRef.current.offsetHeight;
-    }
 
+  useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePos({ x: e.clientX, y: e.clientY });
       if (e.target.getAttribute("data-name") === "test") {

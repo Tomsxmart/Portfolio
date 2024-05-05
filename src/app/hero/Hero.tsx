@@ -26,8 +26,6 @@ const Hero = ({ bg = "#1c1d25e6", title = "Toms Enģelis" }) => {
               </div>
               <Info title={title} />
             </div>
-            <Right />
-            <Right />
           </div>
         </BaseLayoutProvider>
       </div>

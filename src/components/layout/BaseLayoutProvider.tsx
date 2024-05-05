@@ -11,7 +11,7 @@ const BaseLayoutProvider: React.FC<BaseLayoutProviderProps> = ({
 }) => {
   // the structure is a bit confusing at first since its a full screen scrolling page instead of a traditional structure
   // so instead of header footer being relative to the entire page - in this case it is relative to hero section
-  // but the decision was mainly just for structuring purposes
+  // mainly for structuring purposes
   return (
     <>
       <Header />
